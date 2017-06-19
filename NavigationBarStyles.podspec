@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/eastsss/NavigationBarStyles.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.framework  = "UIKit"
-  s.dependency = 'SwiftyUtilities/UIKit'
+  s.dependency 'SwiftyUtilities/UIKit'
   s.source_files = 'NavigationBarStyles/**/*'
 end
