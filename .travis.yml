@@ -1,0 +1,13 @@
+osx_image: xcode8.3
+language: objective-c
+
+env:
+  global:
+    - WORKSPACE=NavigationBarStyles.xcworkspace
+    - SCHEME=NavigationBarStyles
+
+install:
+- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
+script:
+- set -o pipefail 
+- xcodebuild -scheme $SCHEME -workspace $WORKSPACE -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.0' build | xcpretty -c

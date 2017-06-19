@@ -1,0 +1,12 @@
+PODS:
+  - SwiftyUtilities/UIKit (0.2.0)
+
+DEPENDENCIES:
+  - SwiftyUtilities/UIKit (~> 0.2.0)
+
+SPEC CHECKSUMS:
+  SwiftyUtilities: 559314d9afd22b9dd557edf90a95022dcce2e2fc
+
+PODFILE CHECKSUM: ba6e1d4796956ec229b6d3242ddb659e632b0cab
+
+COCOAPODS: 1.2.1

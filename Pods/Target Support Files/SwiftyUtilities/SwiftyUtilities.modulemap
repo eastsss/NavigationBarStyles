@@ -1,0 +1,6 @@
+framework module SwiftyUtilities {
+  umbrella header "SwiftyUtilities-umbrella.h"
+
+  export *
+  module * { export * }
+}
