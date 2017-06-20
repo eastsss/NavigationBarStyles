@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		AF5786B01DC5E2791727237C /* Pods_NavigationBarStyles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888D866D49838C06393D335C /* Pods_NavigationBarStyles.framework */; };
 		C55D9FCE1EF7F4F90000B12C /* NavigationBarStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = C55D9FCC1EF7F4F90000B12C /* NavigationBarStyles.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C55D9FE01EF7F67F0000B12C /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FD61EF7F67F0000B12C /* CustomNavigationBar.swift */; };
-		C55D9FE11EF7F67F0000B12C /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FD71EF7F67F0000B12C /* CustomNavigationController.swift */; };
-		C55D9FE21EF7F67F0000B12C /* CustomNavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FD81EF7F67F0000B12C /* CustomNavigationControllerDelegate.swift */; };
-		C55D9FE31EF7F67F0000B12C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FD91EF7F67F0000B12C /* Navigation.swift */; };
-		C55D9FE51EF7F67F0000B12C /* NavigationBarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FDB1EF7F67F0000B12C /* NavigationBarConfiguration.swift */; };
-		C55D9FE71EF7F67F0000B12C /* UIBarButtonItem+CustomItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FDD1EF7F67F0000B12C /* UIBarButtonItem+CustomItems.swift */; };
-		C55D9FE91EF7F69C0000B12C /* NavigationBarConfigurableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FE81EF7F69C0000B12C /* NavigationBarConfigurableController.swift */; };
-		C55D9FEB1EF7F8E00000B12C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FEA1EF7F8E00000B12C /* Protocols.swift */; };
+		C55D9FF91EF921AC0000B12C /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF11EF921AC0000B12C /* CustomNavigationBar.swift */; };
+		C55D9FFA1EF921AC0000B12C /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF21EF921AC0000B12C /* CustomNavigationController.swift */; };
+		C55D9FFB1EF921AC0000B12C /* CustomNavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF31EF921AC0000B12C /* CustomNavigationControllerDelegate.swift */; };
+		C55D9FFC1EF921AC0000B12C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF41EF921AC0000B12C /* Navigation.swift */; };
+		C55D9FFD1EF921AC0000B12C /* NavigationBarConfigurableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF51EF921AC0000B12C /* NavigationBarConfigurableController.swift */; };
+		C55D9FFE1EF921AC0000B12C /* NavigationBarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF61EF921AC0000B12C /* NavigationBarConfiguration.swift */; };
+		C55D9FFF1EF921AC0000B12C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF71EF921AC0000B12C /* Protocols.swift */; };
+		C55DA0001EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF81EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,14 +25,14 @@
 		C55D9FC91EF7F4F90000B12C /* NavigationBarStyles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NavigationBarStyles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55D9FCC1EF7F4F90000B12C /* NavigationBarStyles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationBarStyles.h; sourceTree = "<group>"; };
 		C55D9FCD1EF7F4F90000B12C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C55D9FD61EF7F67F0000B12C /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
-		C55D9FD71EF7F67F0000B12C /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
-		C55D9FD81EF7F67F0000B12C /* CustomNavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationControllerDelegate.swift; sourceTree = "<group>"; };
-		C55D9FD91EF7F67F0000B12C /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
-		C55D9FDB1EF7F67F0000B12C /* NavigationBarConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarConfiguration.swift; sourceTree = "<group>"; };
-		C55D9FDD1EF7F67F0000B12C /* UIBarButtonItem+CustomItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+CustomItems.swift"; sourceTree = "<group>"; };
-		C55D9FE81EF7F69C0000B12C /* NavigationBarConfigurableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarConfigurableController.swift; sourceTree = "<group>"; };
-		C55D9FEA1EF7F8E00000B12C /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		C55D9FF11EF921AC0000B12C /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		C55D9FF21EF921AC0000B12C /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		C55D9FF31EF921AC0000B12C /* CustomNavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		C55D9FF41EF921AC0000B12C /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		C55D9FF51EF921AC0000B12C /* NavigationBarConfigurableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarConfigurableController.swift; sourceTree = "<group>"; };
+		C55D9FF61EF921AC0000B12C /* NavigationBarConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarConfiguration.swift; sourceTree = "<group>"; };
+		C55D9FF71EF921AC0000B12C /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		C55D9FF81EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+CustomItems.swift"; sourceTree = "<group>"; };
 		CC2341CFC01039758FD1C6D0 /* Pods-NavigationBarStyles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationBarStyles.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationBarStyles/Pods-NavigationBarStyles.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,18 +86,26 @@
 		C55D9FCB1EF7F4F90000B12C /* NavigationBarStyles */ = {
 			isa = PBXGroup;
 			children = (
-				C55D9FE81EF7F69C0000B12C /* NavigationBarConfigurableController.swift */,
-				C55D9FEA1EF7F8E00000B12C /* Protocols.swift */,
-				C55D9FD61EF7F67F0000B12C /* CustomNavigationBar.swift */,
-				C55D9FD71EF7F67F0000B12C /* CustomNavigationController.swift */,
-				C55D9FD81EF7F67F0000B12C /* CustomNavigationControllerDelegate.swift */,
-				C55D9FD91EF7F67F0000B12C /* Navigation.swift */,
-				C55D9FDB1EF7F67F0000B12C /* NavigationBarConfiguration.swift */,
-				C55D9FDD1EF7F67F0000B12C /* UIBarButtonItem+CustomItems.swift */,
+				C55D9FF01EF921AC0000B12C /* Sources */,
 				C55D9FCC1EF7F4F90000B12C /* NavigationBarStyles.h */,
 				C55D9FCD1EF7F4F90000B12C /* Info.plist */,
 			);
 			path = NavigationBarStyles;
+			sourceTree = "<group>";
+		};
+		C55D9FF01EF921AC0000B12C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C55D9FF11EF921AC0000B12C /* CustomNavigationBar.swift */,
+				C55D9FF21EF921AC0000B12C /* CustomNavigationController.swift */,
+				C55D9FF31EF921AC0000B12C /* CustomNavigationControllerDelegate.swift */,
+				C55D9FF41EF921AC0000B12C /* Navigation.swift */,
+				C55D9FF51EF921AC0000B12C /* NavigationBarConfigurableController.swift */,
+				C55D9FF61EF921AC0000B12C /* NavigationBarConfiguration.swift */,
+				C55D9FF71EF921AC0000B12C /* Protocols.swift */,
+				C55D9FF81EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,14 +238,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C55D9FE51EF7F67F0000B12C /* NavigationBarConfiguration.swift in Sources */,
-				C55D9FE11EF7F67F0000B12C /* CustomNavigationController.swift in Sources */,
-				C55D9FEB1EF7F8E00000B12C /* Protocols.swift in Sources */,
-				C55D9FE01EF7F67F0000B12C /* CustomNavigationBar.swift in Sources */,
-				C55D9FE31EF7F67F0000B12C /* Navigation.swift in Sources */,
-				C55D9FE91EF7F69C0000B12C /* NavigationBarConfigurableController.swift in Sources */,
-				C55D9FE71EF7F67F0000B12C /* UIBarButtonItem+CustomItems.swift in Sources */,
-				C55D9FE21EF7F67F0000B12C /* CustomNavigationControllerDelegate.swift in Sources */,
+				C55D9FFB1EF921AC0000B12C /* CustomNavigationControllerDelegate.swift in Sources */,
+				C55D9FFD1EF921AC0000B12C /* NavigationBarConfigurableController.swift in Sources */,
+				C55D9FFF1EF921AC0000B12C /* Protocols.swift in Sources */,
+				C55D9FFA1EF921AC0000B12C /* CustomNavigationController.swift in Sources */,
+				C55D9FF91EF921AC0000B12C /* CustomNavigationBar.swift in Sources */,
+				C55D9FFE1EF921AC0000B12C /* NavigationBarConfiguration.swift in Sources */,
+				C55DA0001EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift in Sources */,
+				C55D9FFC1EF921AC0000B12C /* Navigation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

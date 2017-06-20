@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.framework  = "UIKit"
   s.dependency 'SwiftyUtilities/UIKit'
-  s.source_files = 'NavigationBarStyles/**/*'
+  s.source_files = 'NavigationBarStyles/Sources/**/*'
 end
