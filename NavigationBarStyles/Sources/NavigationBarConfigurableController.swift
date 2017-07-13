@@ -17,11 +17,11 @@ open class NavigationBarConfigurableController: UIViewController, NavigationBarC
         return .default
     }
     
-    var leftBarButtonItems: [BarButtonItem] {
+    open var leftBarButtonItems: [BarButtonItem] {
         return []
     }
     
-    var rightBarButtonItems: [BarButtonItem] {
+    open var rightBarButtonItems: [BarButtonItem] {
         return []
     }
     
