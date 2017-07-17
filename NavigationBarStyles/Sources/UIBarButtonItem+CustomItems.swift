@@ -9,11 +9,6 @@
 import UIKit
 import SwiftyUtilities
 
-public enum ButtonSizePolicy {
-    case imageBased
-    case fixed(CGFloat)
-}
-
 public extension UIBarButtonItem {
     func setActivityIndicator(animating: Bool) {
         button()?.isHidden = animating
@@ -36,19 +31,21 @@ public extension UIBarButtonItem {
 
 // MARK: Custom bar button items creation
 public extension UIBarButtonItem {
-    static func createImageButton(normalImage: UIImage, selectedImage: UIImage?,
-                                  widthPolicy: ButtonSizePolicy, target: AnyObject?,
-                                  action: Selector) -> UIButton {
+    static func makeImageButton(params: ImageButtonParams) -> UIBarButtonItem {
         let button = UIButton(type: .custom)
-        button.setImage(normalImage, for: .normal)
-        button.setImage(selectedImage, for: .selected)
-        button.addTarget(target, action: action, for: .touchUpInside)
+        button.setImage(params.normalImage, for: .normal)
+        
+        if let highlighted = params.highlightedImage {
+            button.setImage(highlighted, for: .selected)
+        }
+        
+        button.addTarget(params.target, action: params.action, for: .touchUpInside)
         
         var frame = CGRect.zero
         
-        switch widthPolicy {
-        case .imageBased:
-            frame.size.width = normalImage.size.width
+        switch params.widthPolicy {
+        case .contentBased:
+            frame.size.width = params.normalImage.size.width
         case .fixed(let value):
             frame.size.width = value
         }
@@ -56,48 +53,61 @@ public extension UIBarButtonItem {
         frame.size.height = 44
         button.frame = frame
         
-        return button
+        if let spinnerParams = params.spinnerParams {
+            addCenteredSpinner(to: button, params: spinnerParams)
+        }
+        
+        return UIBarButtonItem(customView: button)
     }
     
-    // swiftlint:disable:next function_parameter_count
-    static func createRoundedButton(title: String, titleColor: UIColor,
-                                    titleFont: UIFont, backgroundColor: UIColor,
-                                    target: AnyObject?, action: Selector) -> UIView {
+    static func makeRoundedTextButton(params: TextButtonParams) -> UIBarButtonItem {
         let button = UIButton(type: .custom)
-        button.setTitle(title, for: .normal)
-        button.titleLabel?.font = titleFont
-        button.setTitleColor(titleColor, for: .normal)
-        button.setTitleColor(titleColor.highlighted, for: .highlighted)
-        let offsetX: CGFloat = 11.0
-        button.contentEdgeInsets = UIEdgeInsets(
-            top: 0.0, left: offsetX, bottom: 0.0, right: offsetX)
+        button.setTitle(params.title, for: .normal)
+        button.titleLabel?.font = params.titleFont
+        button.setTitleColor(params.titleColor, for: .normal)
+        button.setTitleColor(params.titleColor.highlighted, for: .highlighted)
+        button.contentEdgeInsets = params.contentEdgeInsets
         button.sizeToFit()
-        button.layer.cornerRadius = 4.0
-        button.clipsToBounds = true
-        button.setBackgroundImage(UIImage.withColor(backgroundColor), for: .normal)
-        button.setBackgroundImage(UIImage.withColor(backgroundColor.highlighted), for: .highlighted)
-        button.addTarget(target, action: action, for: .touchUpInside)
+        button.layer.cornerRadius = params.cornerRadius
+        button.clipsToBounds = params.cornerRadius > 0
+        button.setBackgroundImage(UIImage.withColor(params.backgroundColor), for: .normal)
+        button.setBackgroundImage(UIImage.withColor(params.backgroundColor.highlighted), for: .highlighted)
+        button.addTarget(params.target, action: params.action, for: .touchUpInside)
         
-        var frame = button.frame
-        frame.size.height = 25.0
-        button.frame = frame
+        if case .fixed(let value) = params.heightPolicy {
+            var frame = button.frame
+            frame.size.height = value
+            button.frame = frame
+        }
         
-        let spinner = createSpinner(withCenter: CGPoint(x: button.frame.midX, y: button.frame.midY))
+        if let spinnerParams = params.spinnerParams {
+            addCenteredSpinner(to: button, params: spinnerParams)
+        }
         
-        let containerView = UIView()
-        containerView.backgroundColor = UIColor.clear
-        containerView.frame = frame
-        containerView.addSubview(button)
-        containerView.addSubview(spinner)
-        
-        return containerView
+        return UIBarButtonItem(customView: button)
     }
     
-    static func createSpinner(withCenter center: CGPoint) -> UIActivityIndicatorView {
-        let spinner = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    fileprivate static func addCenteredSpinner(to view: UIView, params: SpinnerParams) {
+        let center = CGPoint(x: view.frame.midX, y: view.frame.midY)
+        let spinner = makeSpinner(params: params, center: center)
+        view.addSubview(spinner)
+    }
+    
+    fileprivate static func makeSpinner(params: SpinnerParams, center: CGPoint) -> UIActivityIndicatorView {
+        let style: UIActivityIndicatorViewStyle
+        
+        if params.isLarge {
+            style = .whiteLarge
+        } else {
+            style = .white
+        }
+        
+        let spinner = UIActivityIndicatorView(activityIndicatorStyle: style)
+        
         spinner.hidesWhenStopped = true
         spinner.sizeToFit()
         spinner.center = center
+        spinner.color = params.color
         
         return spinner
     }

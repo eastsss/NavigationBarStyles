@@ -17,6 +17,7 @@
 		C55D9FFE1EF921AC0000B12C /* NavigationBarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF61EF921AC0000B12C /* NavigationBarConfiguration.swift */; };
 		C55D9FFF1EF921AC0000B12C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF71EF921AC0000B12C /* Protocols.swift */; };
 		C55DA0001EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF81EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift */; };
+		C5CBB12B1F1D015F00B75C97 /* BarButtonItemConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB12A1F1D015F00B75C97 /* BarButtonItemConfigurations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		C55D9FF61EF921AC0000B12C /* NavigationBarConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarConfiguration.swift; sourceTree = "<group>"; };
 		C55D9FF71EF921AC0000B12C /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		C55D9FF81EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+CustomItems.swift"; sourceTree = "<group>"; };
+		C5CBB12A1F1D015F00B75C97 /* BarButtonItemConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItemConfigurations.swift; sourceTree = "<group>"; };
 		CC2341CFC01039758FD1C6D0 /* Pods-NavigationBarStyles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationBarStyles.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationBarStyles/Pods-NavigationBarStyles.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +106,7 @@
 				C55D9FF61EF921AC0000B12C /* NavigationBarConfiguration.swift */,
 				C55D9FF71EF921AC0000B12C /* Protocols.swift */,
 				C55D9FF81EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift */,
+				C5CBB12A1F1D015F00B75C97 /* BarButtonItemConfigurations.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				C55D9FFD1EF921AC0000B12C /* NavigationBarConfigurableController.swift in Sources */,
 				C55D9FFF1EF921AC0000B12C /* Protocols.swift in Sources */,
 				C55D9FFA1EF921AC0000B12C /* CustomNavigationController.swift in Sources */,
+				C5CBB12B1F1D015F00B75C97 /* BarButtonItemConfigurations.swift in Sources */,
 				C55D9FF91EF921AC0000B12C /* CustomNavigationBar.swift in Sources */,
 				C55D9FFE1EF921AC0000B12C /* NavigationBarConfiguration.swift in Sources */,
 				C55DA0001EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift in Sources */,
