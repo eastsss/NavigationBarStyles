@@ -13,4 +13,5 @@ target :'NavigationBarStyles' do
     
     #misc
     pod 'SwiftyUtilities/UIKit', '~> 0.2.0'
+    pod 'ReactiveCocoa', '~> 5.0.2'
 end

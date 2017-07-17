@@ -9,15 +9,16 @@
 /* Begin PBXBuildFile section */
 		AF5786B01DC5E2791727237C /* Pods_NavigationBarStyles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888D866D49838C06393D335C /* Pods_NavigationBarStyles.framework */; };
 		C55D9FCE1EF7F4F90000B12C /* NavigationBarStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = C55D9FCC1EF7F4F90000B12C /* NavigationBarStyles.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C55D9FF91EF921AC0000B12C /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF11EF921AC0000B12C /* CustomNavigationBar.swift */; };
-		C55D9FFA1EF921AC0000B12C /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF21EF921AC0000B12C /* CustomNavigationController.swift */; };
-		C55D9FFB1EF921AC0000B12C /* CustomNavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF31EF921AC0000B12C /* CustomNavigationControllerDelegate.swift */; };
-		C55D9FFC1EF921AC0000B12C /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF41EF921AC0000B12C /* Navigation.swift */; };
-		C55D9FFD1EF921AC0000B12C /* NavigationBarConfigurableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF51EF921AC0000B12C /* NavigationBarConfigurableController.swift */; };
-		C55D9FFE1EF921AC0000B12C /* NavigationBarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF61EF921AC0000B12C /* NavigationBarConfiguration.swift */; };
-		C55D9FFF1EF921AC0000B12C /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF71EF921AC0000B12C /* Protocols.swift */; };
-		C55DA0001EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55D9FF81EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift */; };
-		C5CBB12B1F1D015F00B75C97 /* BarButtonItemConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB12A1F1D015F00B75C97 /* BarButtonItemConfigurations.swift */; };
+		C5CBB12E1F1D0D3000B75C97 /* ReactiveExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB12D1F1D0D3000B75C97 /* ReactiveExtensions.swift */; };
+		C5CBB1391F1D0E3600B75C97 /* BarButtonItemConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB1301F1D0E3600B75C97 /* BarButtonItemConfigurations.swift */; };
+		C5CBB13A1F1D0E3600B75C97 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB1311F1D0E3600B75C97 /* CustomNavigationBar.swift */; };
+		C5CBB13B1F1D0E3600B75C97 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB1321F1D0E3600B75C97 /* CustomNavigationController.swift */; };
+		C5CBB13C1F1D0E3600B75C97 /* CustomNavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB1331F1D0E3600B75C97 /* CustomNavigationControllerDelegate.swift */; };
+		C5CBB13D1F1D0E3600B75C97 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB1341F1D0E3600B75C97 /* Navigation.swift */; };
+		C5CBB13E1F1D0E3600B75C97 /* NavigationBarConfigurableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB1351F1D0E3600B75C97 /* NavigationBarConfigurableController.swift */; };
+		C5CBB13F1F1D0E3600B75C97 /* NavigationBarConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB1361F1D0E3600B75C97 /* NavigationBarConfiguration.swift */; };
+		C5CBB1401F1D0E3600B75C97 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB1371F1D0E3600B75C97 /* Protocols.swift */; };
+		C5CBB1411F1D0E3600B75C97 /* UIBarButtonItem+CustomItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB1381F1D0E3600B75C97 /* UIBarButtonItem+CustomItems.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,15 +27,16 @@
 		C55D9FC91EF7F4F90000B12C /* NavigationBarStyles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NavigationBarStyles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55D9FCC1EF7F4F90000B12C /* NavigationBarStyles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationBarStyles.h; sourceTree = "<group>"; };
 		C55D9FCD1EF7F4F90000B12C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C55D9FF11EF921AC0000B12C /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
-		C55D9FF21EF921AC0000B12C /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
-		C55D9FF31EF921AC0000B12C /* CustomNavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationControllerDelegate.swift; sourceTree = "<group>"; };
-		C55D9FF41EF921AC0000B12C /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
-		C55D9FF51EF921AC0000B12C /* NavigationBarConfigurableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarConfigurableController.swift; sourceTree = "<group>"; };
-		C55D9FF61EF921AC0000B12C /* NavigationBarConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarConfiguration.swift; sourceTree = "<group>"; };
-		C55D9FF71EF921AC0000B12C /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
-		C55D9FF81EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+CustomItems.swift"; sourceTree = "<group>"; };
-		C5CBB12A1F1D015F00B75C97 /* BarButtonItemConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItemConfigurations.swift; sourceTree = "<group>"; };
+		C5CBB12D1F1D0D3000B75C97 /* ReactiveExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveExtensions.swift; sourceTree = "<group>"; };
+		C5CBB1301F1D0E3600B75C97 /* BarButtonItemConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItemConfigurations.swift; sourceTree = "<group>"; };
+		C5CBB1311F1D0E3600B75C97 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		C5CBB1321F1D0E3600B75C97 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		C5CBB1331F1D0E3600B75C97 /* CustomNavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		C5CBB1341F1D0E3600B75C97 /* Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		C5CBB1351F1D0E3600B75C97 /* NavigationBarConfigurableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarConfigurableController.swift; sourceTree = "<group>"; };
+		C5CBB1361F1D0E3600B75C97 /* NavigationBarConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarConfiguration.swift; sourceTree = "<group>"; };
+		C5CBB1371F1D0E3600B75C97 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		C5CBB1381F1D0E3600B75C97 /* UIBarButtonItem+CustomItems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+CustomItems.swift"; sourceTree = "<group>"; };
 		CC2341CFC01039758FD1C6D0 /* Pods-NavigationBarStyles.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavigationBarStyles.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavigationBarStyles/Pods-NavigationBarStyles.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,17 +100,34 @@
 		C55D9FF01EF921AC0000B12C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C55D9FF11EF921AC0000B12C /* CustomNavigationBar.swift */,
-				C55D9FF21EF921AC0000B12C /* CustomNavigationController.swift */,
-				C55D9FF31EF921AC0000B12C /* CustomNavigationControllerDelegate.swift */,
-				C55D9FF41EF921AC0000B12C /* Navigation.swift */,
-				C55D9FF51EF921AC0000B12C /* NavigationBarConfigurableController.swift */,
-				C55D9FF61EF921AC0000B12C /* NavigationBarConfiguration.swift */,
-				C55D9FF71EF921AC0000B12C /* Protocols.swift */,
-				C55D9FF81EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift */,
-				C5CBB12A1F1D015F00B75C97 /* BarButtonItemConfigurations.swift */,
+				C5CBB12F1F1D0E3600B75C97 /* Core */,
+				C5CBB12C1F1D0D2300B75C97 /* Reactive */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		C5CBB12C1F1D0D2300B75C97 /* Reactive */ = {
+			isa = PBXGroup;
+			children = (
+				C5CBB12D1F1D0D3000B75C97 /* ReactiveExtensions.swift */,
+			);
+			path = Reactive;
+			sourceTree = "<group>";
+		};
+		C5CBB12F1F1D0E3600B75C97 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C5CBB1301F1D0E3600B75C97 /* BarButtonItemConfigurations.swift */,
+				C5CBB1311F1D0E3600B75C97 /* CustomNavigationBar.swift */,
+				C5CBB1321F1D0E3600B75C97 /* CustomNavigationController.swift */,
+				C5CBB1331F1D0E3600B75C97 /* CustomNavigationControllerDelegate.swift */,
+				C5CBB1341F1D0E3600B75C97 /* Navigation.swift */,
+				C5CBB1351F1D0E3600B75C97 /* NavigationBarConfigurableController.swift */,
+				C5CBB1361F1D0E3600B75C97 /* NavigationBarConfiguration.swift */,
+				C5CBB1371F1D0E3600B75C97 /* Protocols.swift */,
+				C5CBB1381F1D0E3600B75C97 /* UIBarButtonItem+CustomItems.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,15 +260,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C55D9FFB1EF921AC0000B12C /* CustomNavigationControllerDelegate.swift in Sources */,
-				C55D9FFD1EF921AC0000B12C /* NavigationBarConfigurableController.swift in Sources */,
-				C55D9FFF1EF921AC0000B12C /* Protocols.swift in Sources */,
-				C55D9FFA1EF921AC0000B12C /* CustomNavigationController.swift in Sources */,
-				C5CBB12B1F1D015F00B75C97 /* BarButtonItemConfigurations.swift in Sources */,
-				C55D9FF91EF921AC0000B12C /* CustomNavigationBar.swift in Sources */,
-				C55D9FFE1EF921AC0000B12C /* NavigationBarConfiguration.swift in Sources */,
-				C55DA0001EF921AC0000B12C /* UIBarButtonItem+CustomItems.swift in Sources */,
-				C55D9FFC1EF921AC0000B12C /* Navigation.swift in Sources */,
+				C5CBB13F1F1D0E3600B75C97 /* NavigationBarConfiguration.swift in Sources */,
+				C5CBB13B1F1D0E3600B75C97 /* CustomNavigationController.swift in Sources */,
+				C5CBB13A1F1D0E3600B75C97 /* CustomNavigationBar.swift in Sources */,
+				C5CBB1401F1D0E3600B75C97 /* Protocols.swift in Sources */,
+				C5CBB12E1F1D0D3000B75C97 /* ReactiveExtensions.swift in Sources */,
+				C5CBB13E1F1D0E3600B75C97 /* NavigationBarConfigurableController.swift in Sources */,
+				C5CBB13D1F1D0E3600B75C97 /* Navigation.swift in Sources */,
+				C5CBB1391F1D0E3600B75C97 /* BarButtonItemConfigurations.swift in Sources */,
+				C5CBB1411F1D0E3600B75C97 /* UIBarButtonItem+CustomItems.swift in Sources */,
+				C5CBB13C1F1D0E3600B75C97 /* CustomNavigationControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

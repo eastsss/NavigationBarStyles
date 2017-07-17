@@ -1,13 +1,23 @@
 Pod::Spec.new do |s|
   s.name             = 'NavigationBarStyles'
-  s.version          = '0.1.2'
+  s.version          = '0.2'
   s.summary          = 'A way to stylize navigation bar.'
   s.homepage         = 'https://github.com/eastsss/NavigationBarStyles'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'eastsss' => 'anatox91@yandex.ru' }
   s.source           = { :git => 'https://github.com/eastsss/NavigationBarStyles.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
-  s.framework  = "UIKit"
-  s.dependency 'SwiftyUtilities/UIKit'
-  s.source_files = 'NavigationBarStyles/Sources/**/*'
+  s.default_subspec  = "Core"
+  
+  s.subspec "Core" do |ss|
+    ss.framework  = "UIKit"
+    ss.dependency "SwiftyUtilities/UIKit"
+    ss.source_files = "NavigationBarStyles/Sources/Core/**/*"
+  end
+
+  s.subspec "Reactive" do |ss|
+    ss.dependency "NavigationBarStyles/Core"
+    ss.dependency 'ReactiveCocoa', '~> 5.0.2'
+    ss.source_files = "NavigationBarStyles/Sources/Reactive/**/*"
+  end
 end
