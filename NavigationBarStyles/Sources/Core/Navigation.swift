@@ -11,6 +11,13 @@ import UIKit
 final public class Navigation {
     private static let globalDelegate = CustomNavigationControllerDelegate()
     
+    static public func empty() -> CustomNavigationController {
+        let nc = CustomNavigationController(navigationBarClass: CustomNavigationBar.self, toolbarClass: nil)
+        nc.delegate = globalDelegate
+        
+        return nc
+    }
+    
     static public func wrapped(_ controller: NavigationBarConfigurableController) -> CustomNavigationController {
         return wrapped([controller])
     }
