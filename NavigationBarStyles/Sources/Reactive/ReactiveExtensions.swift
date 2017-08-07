@@ -10,15 +10,15 @@ import ReactiveSwift
 import ReactiveCocoa
 
 extension Reactive where Base: UIBarButtonItem {
-    var buttonLoading: BindingTarget<Bool> {
+    public var buttonLoading: BindingTarget<Bool> {
         return makeBindingTarget { $0.setActivityIndicator(animating: $1) }
     }
     
-    var buttonEnabled: BindingTarget<Bool> {
+    public var buttonEnabled: BindingTarget<Bool> {
         return makeBindingTarget { $0.setButton(enabled: $1) }
     }
     
-    var buttonSelected: BindingTarget<Bool> {
+    public var buttonSelected: BindingTarget<Bool> {
         return makeBindingTarget { $0.setButton(selected: $1) }
     }
 }
