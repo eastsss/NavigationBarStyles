@@ -67,8 +67,15 @@ public extension UIBarButtonItem {
         button.sizeToFit()
         button.layer.cornerRadius = params.cornerRadius
         button.clipsToBounds = params.cornerRadius > 0
-        button.setBackgroundImage(UIImage.withColor(params.backgroundColor), for: .normal)
-        button.setBackgroundImage(UIImage.withColor(params.backgroundColor.highlighted), for: .highlighted)
+        
+        if params.backgroundColor == UIColor.clear {
+            button.setBackgroundImage(nil, for: .normal)
+            button.setBackgroundImage(nil, for: .highlighted)
+        } else {
+            button.setBackgroundImage(UIImage.withColor(params.backgroundColor), for: .normal)
+            button.setBackgroundImage(UIImage.withColor(params.backgroundColor.highlighted), for: .highlighted)
+        }
+        
         button.addTarget(params.target, action: params.action, for: .touchUpInside)
         
         if case .fixed(let value) = params.heightPolicy {
