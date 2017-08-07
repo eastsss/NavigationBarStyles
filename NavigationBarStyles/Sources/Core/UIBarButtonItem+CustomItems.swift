@@ -53,11 +53,8 @@ public extension UIBarButtonItem {
         frame.size.height = 44
         button.frame = frame
         
-        if let spinnerParams = params.spinnerParams {
-            addCenteredSpinner(to: button, params: spinnerParams)
-        }
-        
-        return UIBarButtonItem(customView: button)
+        let wrapper = wrapperView(button: button, addingSpinner: params.spinnerParams)
+        return UIBarButtonItem(customView: wrapper)
     }
     
     static func makeRoundedTextButton(params: TextButtonParams) -> UIBarButtonItem {
@@ -80,11 +77,8 @@ public extension UIBarButtonItem {
             button.frame = frame
         }
         
-        if let spinnerParams = params.spinnerParams {
-            addCenteredSpinner(to: button, params: spinnerParams)
-        }
-        
-        return UIBarButtonItem(customView: button)
+        let wrapper = wrapperView(button: button, addingSpinner: params.spinnerParams)
+        return UIBarButtonItem(customView: wrapper)
     }
     
     fileprivate static func addCenteredSpinner(to view: UIView, params: SpinnerParams) {
@@ -110,6 +104,19 @@ public extension UIBarButtonItem {
         spinner.color = params.color
         
         return spinner
+    }
+    
+    fileprivate static func wrapperView(button: UIButton, addingSpinner params: SpinnerParams?) -> UIView {
+        let view = UIView()
+        view.backgroundColor = UIColor.clear
+        view.frame = button.bounds
+        view.addSubview(button)
+        
+        if let spinnerParams = params {
+            addCenteredSpinner(to: view, params: spinnerParams)
+        }
+        
+        return view
     }
 }
 
