@@ -11,13 +11,13 @@ Pod::Spec.new do |s|
   
   s.subspec "Core" do |ss|
     ss.framework  = "UIKit"
-    ss.dependency "SwiftyUtilities/UIKit"
+    ss.dependency 'SwiftyUtilities/UIKit', :git => 'https://github.com/eastsss/SwiftyUtilities.git', :branch => 'swift-3.2'
     ss.source_files = "NavigationBarStyles/Sources/Core/**/*"
   end
 
   s.subspec "Reactive" do |ss|
     ss.dependency "NavigationBarStyles/Core"
-    ss.dependency 'ReactiveCocoa', '~> 5.0.2'
+    ss.dependency 'ReactiveCocoa', '~> 6.0.2'
     ss.source_files = "NavigationBarStyles/Sources/Reactive/**/*"
   end
 end
