@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'NavigationBarStyles'
-  s.version          = '0.2.5'
+  s.version          = '0.3.0'
   s.summary          = 'A way to stylize navigation bar.'
   s.homepage         = 'https://github.com/eastsss/NavigationBarStyles'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   
   s.subspec "Core" do |ss|
     ss.framework  = "UIKit"
-    ss.dependency 'SwiftyUtilities/UIKit', :git => 'https://github.com/eastsss/SwiftyUtilities.git', :branch => 'swift-3.2'
+    ss.dependency 'SwiftyUtilities/UIKit', '~> 0.4.0'
     ss.source_files = "NavigationBarStyles/Sources/Core/**/*"
   end
 
