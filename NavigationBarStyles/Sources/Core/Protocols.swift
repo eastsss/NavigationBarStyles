@@ -23,4 +23,11 @@ public protocol NavigationBarStyle {
     var shadowImage: UIImage? { get }
     var titleTextAttributes: [String: Any]? { get }
     var tintColor: UIColor? { get }
+    var titleVerticalPositionAdjustment: CGFloat { get }
+}
+
+extension NavigationBarStyle {
+    public var titleVerticalPositionAdjustment: CGFloat {
+        return -2
+    }
 }
