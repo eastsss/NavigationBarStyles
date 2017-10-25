@@ -39,6 +39,6 @@ private extension CustomNavigationBar {
         isTranslucent = style.translucent
         titleTextAttributes = style.titleTextAttributes
         tintColor = style.tintColor
-        setTitleVerticalPositionAdjustment(-2, for: .default)
+        setTitleVerticalPositionAdjustment(style.titleVerticalPositionAdjustment, for: .default)
     }
 }
