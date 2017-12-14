@@ -10,7 +10,6 @@
 		AF5786B01DC5E2791727237C /* Pods_NavigationBarStyles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 888D866D49838C06393D335C /* Pods_NavigationBarStyles.framework */; };
 		C55D9FCE1EF7F4F90000B12C /* NavigationBarStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = C55D9FCC1EF7F4F90000B12C /* NavigationBarStyles.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5CBB12E1F1D0D3000B75C97 /* ReactiveExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB12D1F1D0D3000B75C97 /* ReactiveExtensions.swift */; };
-		C5CBB1391F1D0E3600B75C97 /* BarButtonItemConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB1301F1D0E3600B75C97 /* BarButtonItemConfigurations.swift */; };
 		C5CBB13A1F1D0E3600B75C97 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB1311F1D0E3600B75C97 /* CustomNavigationBar.swift */; };
 		C5CBB13B1F1D0E3600B75C97 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB1321F1D0E3600B75C97 /* CustomNavigationController.swift */; };
 		C5CBB13C1F1D0E3600B75C97 /* CustomNavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CBB1331F1D0E3600B75C97 /* CustomNavigationControllerDelegate.swift */; };
@@ -28,7 +27,6 @@
 		C55D9FCC1EF7F4F90000B12C /* NavigationBarStyles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationBarStyles.h; sourceTree = "<group>"; };
 		C55D9FCD1EF7F4F90000B12C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5CBB12D1F1D0D3000B75C97 /* ReactiveExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReactiveExtensions.swift; sourceTree = "<group>"; };
-		C5CBB1301F1D0E3600B75C97 /* BarButtonItemConfigurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarButtonItemConfigurations.swift; sourceTree = "<group>"; };
 		C5CBB1311F1D0E3600B75C97 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
 		C5CBB1321F1D0E3600B75C97 /* CustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		C5CBB1331F1D0E3600B75C97 /* CustomNavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationControllerDelegate.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 		C5CBB12F1F1D0E3600B75C97 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				C5CBB1301F1D0E3600B75C97 /* BarButtonItemConfigurations.swift */,
 				C5CBB1311F1D0E3600B75C97 /* CustomNavigationBar.swift */,
 				C5CBB1321F1D0E3600B75C97 /* CustomNavigationController.swift */,
 				C5CBB1331F1D0E3600B75C97 /* CustomNavigationControllerDelegate.swift */,
@@ -270,7 +267,6 @@
 				C5CBB12E1F1D0D3000B75C97 /* ReactiveExtensions.swift in Sources */,
 				C5CBB13E1F1D0E3600B75C97 /* NavigationBarConfigurableController.swift in Sources */,
 				C5CBB13D1F1D0E3600B75C97 /* Navigation.swift in Sources */,
-				C5CBB1391F1D0E3600B75C97 /* BarButtonItemConfigurations.swift in Sources */,
 				C5CBB1411F1D0E3600B75C97 /* UIBarButtonItem+CustomItems.swift in Sources */,
 				C5CBB13C1F1D0E3600B75C97 /* CustomNavigationControllerDelegate.swift in Sources */,
 			);

@@ -25,7 +25,7 @@ public enum NavigationBarConfiguration {
         switch self {
         case .hidden:
             return true
-        case .visible(_):
+        case .visible:
             return false
         }
     }

@@ -9,6 +9,16 @@
 import UIKit
 import SwiftyUtilities
 
+public struct SpinnerParams {
+    public let color: UIColor
+    public let isLarge: Bool
+    
+    public init(color: UIColor = UIColor.gray, isLarge: Bool = false) {
+        self.color = color
+        self.isLarge = isLarge
+    }
+}
+
 public extension UIBarButtonItem {
     func setActivityIndicator(animating: Bool) {
         button()?.isHidden = animating
@@ -31,60 +41,16 @@ public extension UIBarButtonItem {
 
 // MARK: Custom bar button items creation
 public extension UIBarButtonItem {
-    static func makeImageButton(params: ImageButtonParams) -> UIBarButtonItem {
+    static func makeButton(configurationBlock: (UIButton) -> Void,
+                           spinnerParams: SpinnerParams? = nil,
+                           target: AnyObject?,
+                           action: Selector) -> UIBarButtonItem {
         let button = UIButton(type: .custom)
-        button.setImage(params.normalImage, for: .normal)
+        configurationBlock(button)
         
-        if let highlighted = params.highlightedImage {
-            button.setImage(highlighted, for: .selected)
-        }
+        button.addTarget(target, action: action, for: .touchUpInside)
         
-        button.addTarget(params.target, action: params.action, for: .touchUpInside)
-        
-        var frame = CGRect.zero
-        
-        switch params.widthPolicy {
-        case .contentBased:
-            frame.size.width = params.normalImage.size.width
-        case .fixed(let value):
-            frame.size.width = value
-        }
-        
-        frame.size.height = 44
-        button.frame = frame
-        
-        let wrapper = wrapperView(button: button, addingSpinner: params.spinnerParams)
-        return UIBarButtonItem(customView: wrapper)
-    }
-    
-    static func makeRoundedTextButton(params: TextButtonParams) -> UIBarButtonItem {
-        let button = UIButton(type: .custom)
-        button.setTitle(params.title, for: .normal)
-        button.titleLabel?.font = params.titleFont
-        button.setTitleColor(params.titleColor, for: .normal)
-        button.setTitleColor(params.titleColor.highlighted, for: .highlighted)
-        button.contentEdgeInsets = params.contentEdgeInsets
-        button.sizeToFit()
-        button.layer.cornerRadius = params.cornerRadius
-        button.clipsToBounds = params.cornerRadius > 0
-        
-        if params.backgroundColor == UIColor.clear {
-            button.setBackgroundImage(nil, for: .normal)
-            button.setBackgroundImage(nil, for: .highlighted)
-        } else {
-            button.setBackgroundImage(UIImage.withColor(params.backgroundColor), for: .normal)
-            button.setBackgroundImage(UIImage.withColor(params.backgroundColor.highlighted), for: .highlighted)
-        }
-        
-        button.addTarget(params.target, action: params.action, for: .touchUpInside)
-        
-        if case .fixed(let value) = params.heightPolicy {
-            var frame = button.frame
-            frame.size.height = value
-            button.frame = frame
-        }
-        
-        let wrapper = wrapperView(button: button, addingSpinner: params.spinnerParams)
+        let wrapper = wrapperView(button: button, addingSpinner: spinnerParams)
         return UIBarButtonItem(customView: wrapper)
     }
     
