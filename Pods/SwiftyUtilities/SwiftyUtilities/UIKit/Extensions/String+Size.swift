@@ -13,7 +13,7 @@ extension String {
         let attrString = NSAttributedString(
             string: self,
             attributes: [
-                NSFontAttributeName: font
+                NSAttributedStringKey.font: font
             ]
         )
         

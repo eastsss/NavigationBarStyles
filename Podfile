@@ -12,6 +12,6 @@ target :'NavigationBarStyles' do
 	inhibit_all_warnings!
     
     #misc
-    pod 'SwiftyUtilities/UIKit', :git => 'https://github.com/eastsss/SwiftyUtilities.git', :branch => 'swift-3.2'
-    pod 'ReactiveCocoa', '~> 6.0.2'
+    pod 'SwiftyUtilities/UIKit', '~> 0.5.0'
+    pod 'ReactiveCocoa', '~> 7.1.0-rc.2'
 end

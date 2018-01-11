@@ -18,7 +18,7 @@ extension UIColor {
     }
     
     public convenience init(whiteComponent: UInt8, alpha: CGFloat = 1.0) {
-        self.init(white: CGFloat(whiteComponent) / 255.0, alpha:alpha)
+        self.init(white: CGFloat(whiteComponent) / 255.0, alpha: alpha)
     }
     
     public convenience init(hexFormat: UInt, alpha: CGFloat = 1.0) {

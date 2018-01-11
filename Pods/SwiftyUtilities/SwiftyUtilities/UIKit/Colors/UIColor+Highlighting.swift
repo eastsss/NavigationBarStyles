@@ -46,7 +46,7 @@ extension UIColor {
         return UIColor(r: red,
                        g: green,
                        b: blue,
-                       alpha:alpha)
+                       alpha: alpha)
     }
 }
 

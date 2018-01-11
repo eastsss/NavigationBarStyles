@@ -17,11 +17,12 @@ public protocol NavigationBarConfigurable {
 }
 
 public protocol NavigationBarStyle {
+    var identifier: String { get }
     var translucent: Bool { get }
     var backgroundImage: UIImage? { get }
     var backgroundColor: UIColor { get }
     var shadowImage: UIImage? { get }
-    var titleTextAttributes: [String: Any]? { get }
+    var titleTextAttributes: [NSAttributedStringKey: Any]? { get }
     var tintColor: UIColor? { get }
     var titleVerticalPositionAdjustment: CGFloat { get }
 }
