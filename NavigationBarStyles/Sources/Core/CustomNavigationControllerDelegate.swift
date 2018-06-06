@@ -47,11 +47,10 @@ class CustomNavigationControllerDelegate: NSObject, UINavigationControllerDelega
         let bgImageEqual = lhs.backgroundImage == rhs.backgroundImage
         let bgColorEqual = lhs.backgroundColor == rhs.backgroundColor
         let shadowImageEqual = lhs.shadowImage == rhs.shadowImage
-        let titleAttributesEqual = lhs.titleTextAttributes == rhs.titleTextAttributes
+//        let titleAttributesEqual = lhs.titleTextAttributes == rhs.titleTextAttributes
         let tintColorEqual = lhs.tintColor == rhs.tintColor
         
         return translucentEqual && bgImageEqual &&
-            bgColorEqual && shadowImageEqual &&
-            titleAttributesEqual && tintColorEqual
+            bgColorEqual && shadowImageEqual && tintColorEqual
     }
 }
