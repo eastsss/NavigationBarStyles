@@ -1,21 +1,36 @@
 PODS:
-  - ReactiveCocoa (5.0.4):
-    - ReactiveSwift (~> 1.1)
-  - ReactiveSwift (1.1.5):
+  - ReactiveCocoa (7.2.0):
+    - ReactiveSwift (~> 3.1)
+  - ReactiveSwift (3.1.0):
     - Result (~> 3.2)
-  - Result (3.2.3)
-  - SwiftyUtilities/UIKit (0.2.0)
+  - Result (3.2.4)
+  - SwiftyUtilities/UIKit (0.3.1)
 
 DEPENDENCIES:
-  - ReactiveCocoa (~> 5.0.2)
-  - SwiftyUtilities/UIKit (~> 0.2.0)
+  - ReactiveCocoa (~> 7.2.0)
+  - SwiftyUtilities/UIKit (from `https://github.com/vitkuzmenko/SwiftyUtilities.git`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ReactiveCocoa
+    - ReactiveSwift
+    - Result
+
+EXTERNAL SOURCES:
+  SwiftyUtilities:
+    :git: https://github.com/vitkuzmenko/SwiftyUtilities.git
+
+CHECKOUT OPTIONS:
+  SwiftyUtilities:
+    :commit: 4b37a726c9179c3e4a3dafd06f0094000435fb6f
+    :git: https://github.com/vitkuzmenko/SwiftyUtilities.git
 
 SPEC CHECKSUMS:
-  ReactiveCocoa: b31e754d15937811ede648fc83cd68f5de70a3d4
-  ReactiveSwift: 3fea31f8fc49f112d2dc613282c5d395c4d167bb
-  Result: 128640a6347e8d2ae48b142556739a2d13f90ce6
-  SwiftyUtilities: 559314d9afd22b9dd557edf90a95022dcce2e2fc
+  ReactiveCocoa: 476dae7ca790f40d30d186a1bd7ebae4290395d5
+  ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  SwiftyUtilities: 9aa935dc54d7af8485aa0c7a42c47e1a542d68d1
 
-PODFILE CHECKSUM: d57502e338550fdfd88dbbb47484a31b59048fe3
+PODFILE CHECKSUM: 0e869a4f200fc7ba181e2aad191d8c3012fea81d
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.5.2

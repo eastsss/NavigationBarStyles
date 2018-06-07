@@ -21,6 +21,6 @@ public protocol NavigationBarStyle {
     var backgroundImage: UIImage? { get }
     var backgroundColor: UIColor { get }
     var shadowImage: UIImage? { get }
-    var titleTextAttributes: [String: Any]? { get }
+    var titleTextAttributes: [NSAttributedStringKey: Any]? { get }
     var tintColor: UIColor? { get }
 }

@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'eastsss' => 'anatox91@yandex.ru' }
   s.source           = { :git => 'https://github.com/eastsss/NavigationBarStyles.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.default_subspec  = "Core"
   
   s.subspec "Core" do |ss|
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.subspec "Reactive" do |ss|
     ss.dependency "NavigationBarStyles/Core"
-    ss.dependency 'ReactiveCocoa', '~> 5.0.2'
+    ss.dependency 'ReactiveCocoa', '~> 7.2.0'
     ss.source_files = "NavigationBarStyles/Sources/Reactive/**/*"
   end
 end
